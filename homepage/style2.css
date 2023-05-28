@@ -2251,6 +2251,8 @@ html {
   }
   
   .button-primary {
+    float: right;
+    clear: right;
     color: #fff;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -2259,6 +2261,11 @@ html {
     font-size: 12px;
     line-height: 20px;
     transition: all .2s;
+    position: fixed;
+    top: 0%;
+    bottom: auto;
+    left: auto;
+    right: 0%;
   }
   
   .button-primary:hover {
@@ -2291,7 +2298,13 @@ html {
     line-height: 50px;
   }
   
-  .field-label-5, .field-label-6 {
+  .field-label-5 {
+    color: #0e2b81;
+    line-height: 50px;
+  }
+  
+  .field-label-6 {
+    float: left;
     color: #0e2b81;
     line-height: 50px;
   }
@@ -2316,6 +2329,20 @@ html {
   .heading-6 {
     color: #0e2b81;
     font-size: 20px;
+  }
+  
+  .image {
+    float: left;
+    clear: left;
+    position: fixed;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: auto;
+  }
+  
+  .text-field {
+    position: absolute;
   }
   
   @media screen and (max-width: 991px) {
@@ -2431,3 +2458,4 @@ html {
       flex-direction: column;
     }
   }
+  
