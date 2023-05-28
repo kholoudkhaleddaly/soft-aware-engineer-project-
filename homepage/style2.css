@@ -2251,8 +2251,6 @@ html {
   }
   
   .button-primary {
-    float: right;
-    clear: right;
     color: #fff;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -2339,10 +2337,6 @@ html {
     bottom: auto;
     left: 0%;
     right: auto;
-  }
-  
-  .text-field {
-    position: absolute;
   }
   
   @media screen and (max-width: 991px) {
