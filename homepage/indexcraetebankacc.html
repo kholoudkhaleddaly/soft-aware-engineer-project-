@@ -19,7 +19,7 @@
         <div id="logo">
             <img src="People Dollar logo, Money Finances logo (5).png" width="150" height="150">
           </div>
-        <header>Create Account</header>
+        <header>Create bank Account</header>
         <form action="#">
             <div class="form first">
                 <div class="details personal">
@@ -43,7 +43,7 @@
 
                         <div class="input-field">
                             <label>Mobile Number</label>
-                            <input type="number" placeholder="Enter mobile number" required>
+                            <input type="text" placeholder="Enter your phone number" required>
                         </div>
 
                         <div class="input-field">
@@ -69,16 +69,20 @@
                     <div class="fields">
                         <div class="input-field">
                             <label>ID Type</label>
-                            <input type="text" placeholder="Enter ID type" required>
+                            <select required>
+                                <option disabled selected>Select ID Type</option>
+                                <option>National id</option>
+                                <option>Passport id</option>
+                          
+                            </select>
                         </div>
-
                         <div class="input-field">
                             <label>ID Number</label>
-                            <input type="number" placeholder="Enter ID number" required>
+                            <input type="text" placeholder="Enter your ID number" required>
                         </div>
 
                         <div class="input-field">
-                            <label for="images">Images <span>format : img or pdf only</span></label>
+                            <label for="images">Image of  <span> national Id as pdf</span></label>
                         <input type="file" name="images" id="images" required="required" multiple="multiple"/>
                         <div class="file-dummy">
                           <div class="success">Great, your files are selected. Keep on.</div>
@@ -87,103 +91,47 @@
                       </div>
                       
                     </div>
-                    <button class="nextBtn">
-                        <span class="btnText">create account</span>
-                        <i class="uil uil-navigator"></i>
-                        <onclick><a id="nextBtn" style="display:none ; color:green;">your Request has been submitted sucessfully</a></onclick>
+                    <button id="hi" class="nextBtn" data-wait="Please wait..." onclick="show()" onclick="renderNewPage()" onclick="window.location.href='login.html'">
+                        <span class="btnText"  >create account</span>
+                      <!--  <i class="uil uil-navigator"></i>-->
+                      
                     </button>
-                    
+                    <a id="button" style="display:none ; text-align: center; color:green;">Your account has been successfully created!</a>
                 </div> 
             </div>
 
-            <div class="form second">
-                <div class="details address">
-                    <span class="title">Address Details</span>
-
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>Address Type</label>
-                            <input type="text" placeholder="Permanent or Temporary" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Nationality</label>
-                            <input type="text" placeholder="Enter nationality" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>State</label>
-                            <input type="text" placeholder="Enter your state" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>District</label>
-                            <input type="text" placeholder="Enter your district" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Block Number</label>
-                            <input type="number" placeholder="Enter block number" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Ward Number</label>
-                            <input type="number" placeholder="Enter ward number" required>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="details family">
-                    <span class="title">Family Details</span>
-
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>Father Name</label>
-                            <input type="text" placeholder="Enter father name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Mother Name</label>
-                            <input type="text" placeholder="Enter mother name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Grandfather</label>
-                            <input type="text" placeholder="Enter grandfther name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Spouse Name</label>
-                            <input type="text" placeholder="Enter spouse name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Father in Law</label>
-                            <input type="text" placeholder="Father in law name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Mother in Law</label>
-                            <input type="text" placeholder="Mother in law name" required>
-                        </div>
-                    </div>
-
-                    <div class="buttons">
-                        <div class="backBtn">
-                            <i class="uil uil-navigator"></i>
-                            <span class="btnText">Back</span>
-                        </div>
-                        
-                        <button class="sumbit">
-                            <span class="btnText">Submit</span>
-                            <i class="uil uil-navigator"></i>
-                        </button>
-                    </div>
-                </div> 
-            </div>
+          
         </form>
     </div>
-
-    <script src="script.js"></script>
+    <script>
+        function renderNewPage() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', 'login.html');
+          xhr.onload = function() {
+            if (xhr.status === 200) {
+              var newPage = xhr.responseText;
+              document.getElementById('hi').innerHTML = newPage;
+            }
+          };
+          xhr.send();
+        }
+          </script>
+          <script>function show() {
+            var div = document.getElementById("button");
+            div.style.display = "block";
+          }</script>
+          <script>
+            function renderNewPage() {
+              var xhr = new XMLHttpRequest();
+              xhr.open('GET', 'login.html');
+              xhr.onload = function() {
+                if (xhr.status === 200) {
+                  var newPage = xhr.responseText;
+                  document.getElementById('hi').innerHTML = newPage;
+                }
+              };
+              xhr.send();
+            }
+              </script>
 </body>
 </html>
