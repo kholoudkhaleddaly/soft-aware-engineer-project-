@@ -114,6 +114,16 @@
                     <span style="font-size:20px; color:black;"><b> Customer Service:</b> </span>
                     <ul role="list">
                         <li>
+                            <a href="#" class="button-5 w-button" style="border-radius: 10px;" onclick="show6()" >Add Announcement </a>
+                        </li>
+                            <div>
+                                <label style="color: #dbc893;">Put a new Announcement</label>
+                                <textarea placeholder="Serial number" style="height: 50pxpx; border-radius: 5px; color: #000;" ></textarea>
+                                <button href="#" style=" background-color: #0e2b81; color:white; border-radius: 10px;" onclick="show5()">Submit</button>
+                                <a id="button5" style="display:none ; color:green;">your Request has been submitted sucessfully</a>
+                            </div>
+                            <br />
+                        <li>
                             <a href="#" class="button-5 w-button" style="border-radius: 10px;" onclick="show2()" >View and Handle Technical Issues</a>
                         </li>
                         <li>
@@ -296,6 +306,14 @@
         }
         function show7() {
             var div = document.getElementById("button3");
+            div.style.display = "block";
+        }
+        function show6() {
+            var div = document.getElementById("button3");
+            div.style.display = "block";
+        }
+        function show5() {
+            var div = document.getElementById("button5");
             div.style.display = "block";
         }
     </script>
