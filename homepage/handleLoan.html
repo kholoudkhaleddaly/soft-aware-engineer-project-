@@ -276,14 +276,14 @@
     <br>
     <br>
     <div>
-       <button onclick="addImage()" style="">Save</button>
+       <button onclick="addImage()" >Save</button>
      </div>  
        <script>
          function addImage() {
         //  var image = "url(https://uploads-ssl.webflow.com/6472ad1fcafccad9266ca477/6472c1f1cafccad92676c858_check.png)";
         //  image.style.display = "block";
          var checkboxes = document.querySelectorAll('input[type="radio"]');
-         const images = document.querySelector("label[for='radio']");
+        //  const images = document.querySelector("label[for='radio']");
         //  var cbNames = document.querySelectorAll('input[type="radio"]').name;
          for (var i = 0; i < checkboxes.length; i++) {
            if (checkboxes[i].checked) {
