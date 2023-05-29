@@ -89,9 +89,10 @@
                     </div>  
                         </div>
                         <div class="col-md-12">
-                           <button class="send_btn">Send</button>
-                           <a id="send_btn" style="display:none ; color:green;">your Request has been submitted sucessfully</a>
+                           <button class="send_btn" onclick="showDiv()">Send</button>
+                           
                         </div>
+                        <a id="bttn" style="display:none ; color:green;">Sent Successfully</a>
                      </div>
                   </form>
                </div>
@@ -105,29 +106,10 @@
       </div>
       <script>
          function showDiv() {
-             var div = document.getElementById("234");
+             var div = document.getElementById("bttn");
              div.style.display = "block";
          }
-         function show() {
-             var div = document.getElementById("button");
-             div.style.display = "block";
-         }
-         function showDiv1() {
-             var div = document.getElementById("567");
-             div.style.display = "block";
-         }
-         function show1() {
-             var div = document.getElementById("button1");
-             div.style.display = "block";
-         }
-         function show2() {
-             var div = document.getElementById("000");
-             div.style.display = "block";
-         }
-         function show3() {
-             var div = document.getElementById("0000");
-             div.style.display = "block";
-         }
+         
      </script>
       <!-- end contact  section -->
       <!--  footer -->
