@@ -51,12 +51,16 @@
       <!-- end testimonial section -->
       <!-- comments  section -->
       <div class="contact ">
+         <a id="bttn1" style="display:none ; text-align: center; color:green;">Your issue has been sent!</a>
+
          <div class="container">
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
+
                      <h2> <span class="yellow">Contact us</span><br> Report Technical Issue </h2>
                   </div>
+
                </div>
             </div>
             <div class="row">
@@ -64,22 +68,23 @@
                   <form id="contac_form" class="contac_form">
                      <div class="row">
                         <div class="col-md-12 ">
-                           <input class="contac_control" placeholder=" Name" type="type" name="Name"> 
+                           <input class="contac_control" placeholder=" Name" type="type" name="Name" style="color:black"> 
                         </div>
                         <div class="col-md-12">
-                           <input class="contac_control" placeholder="Phone Number  " type="type" name="Phone Number  ">                          
+                           <input class="contac_control" placeholder="Phone Number  " type="type" name="Phone Number" style="color:black">                          
                         </div>
                         <div class="col-md-12">
-                           <input class="contac_control" placeholder="Email Address" type="type" name="Email Address">                          
+                           <input class="contac_control" placeholder="Email Address" type="type" name="Email Address" style="color:black">                          
                         </div>
                         <div class="col-md-12">
                            <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message </textarea>
                         </div>
                         <div class="col-md-12">
-                           <button class="send_btn" onclick="show()">Send</button>
+                           <button class="send_btn" onclick="showDiv()">Send</button>
                         </div>
-                        <a id="button" style="display:none ; text-align: center; color:green;">Your issue has been sent!</a>
                      </div>
+                     <br>
+                     <br>
                   </form>
                </div>
             </div>
@@ -96,6 +101,13 @@
     
       <!-- end footer -->
       <!-- Javascript files-->
+      <script>
+         function showDiv() {
+             var div = document.getElementById("bttn1");
+             div.style.display = "block";
+         }
+         
+     </script>
       <script>function show() {
         var div = document.getElementById("button");
         div.style.display = "block";
