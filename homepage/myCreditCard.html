@@ -199,15 +199,22 @@
                                 <a id="button" style="display:none ; color:green;">Your payment is successful! &nbsp;Remaining amount= 1000</a>
                               </div>
 
-                                <li>
-                                    <a href="#" class="button" onclick="showDiv()" style="border-radius: 10px;">Stop this Credit Card</a>
-                                </li>
-                                <a id="button" style="display:none ; color:green;">Your request to stop this credit card has been submitted successfully</a>
+                              <button onclick="show7()" style="position: absolute; right: 0;height:30px; background-color: red; color: aliceblue; border-radius: 5px;">Request to DELETE this Credit Card</button>
+                              <br><br><br><a id="button3" style="display:none ; color:green; position: absolute; right: 0;">your Request has been submitted sucessfully</a>
+          <br>
+          <br>   
                             </div>
                         </div>
                     </section>
                 </li>
          
+                <script>
+                  
+                       function show7() {
+                           var div = document.getElementById("button3");
+                           div.style.display = "block";
+                       }
+               </script>
      <script>
        function showDiv() {
             var div = document.getElementById("button");
