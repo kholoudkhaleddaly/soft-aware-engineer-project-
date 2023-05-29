@@ -239,7 +239,7 @@
                                             </div>
                                             <div id="w-node-e8103ee2-3d2d-7058-a2b9-f05b38e21186-266ca4dc">$32.00</div>
                                             <div id="w-node-e8103ee2-3d2d-7058-a2b9-f05b38e21188-266ca4dc">
-                                                    <a href="#" class="w-button" style="background: #92a8c7" disabled >paid </a>
+                                                    <a href="#" class="w-button" style="background: #92a8c7 ; border-radius: 10px;" disabled >paid </a>
                                                 </div>
                                         </div>
                                         <div class="payment">
@@ -262,7 +262,7 @@
                                             </div>
                                             <div id="w-node-e8103ee2-3d2d-7058-a2b9-f05b38e21186-266ca4dc">$400.00</div>
                                             <div id="w-node-e8103ee2-3d2d-7058-a2b9-f05b38e21188-266ca4dc">
-                                                    <a href="#" id="pay1" class="w-button" onclick="changeImage( 'red1' , 'done1', 'pay1' )">pay</a>
+                                                    <a href="#" id="pay1" class="w-button" style="background-color: #0e2b81; border-radius: 10px; color: white;" onclick="changeImage( 'red1' , 'done1', 'pay1' )">pay</a>
                                                 </div>
                                         </div><div class="payment">
                                             <div class="payment-name">
@@ -284,7 +284,7 @@
                                             </div>
                                             <div id="w-node-e8103ee2-3d2d-7058-a2b9-f05b38e21186-266ca4dc">$50.00</div>
                                             <div id="w-node-e8103ee2-3d2d-7058-a2b9-f05b38e21188-266ca4dc">
-                                                    <a href="#" id="pay2" class="w-button" onclick="changeImage('lamp2','done2', 'pay2')">pay</a>
+                                                    <a href="#" id="pay2" class="w-button" style="background-color: #0e2b81; border-radius: 10px; color: white;" onclick="changeImage('lamp2','done2', 'pay2')">pay</a>
                                                 </div>
                                         </div><div class="payment">
                                             <div class="payment-name">
@@ -306,16 +306,44 @@
                                             </div>
                                             <div id="w-node-e8103ee2-3d2d-7058-a2b9-f05b38e21186-266ca4dc">$80.00</div>
                                             <div id="w-node-e8103ee2-3d2d-7058-a2b9-f05b38e21188-266ca4dc">
-                                                    <a href="#" id="pay3" class="w-button" onclick="changeImage('lamp3','done3','pay3')">pay</a>
+                                                    <a href="#" id="pay3" class="w-button" style="background-color: #0e2b81; border-radius: 10px; color: white;" onclick="changeImage('lamp3','done3','pay3')">pay</a>
                                                     <script src="index.js"></script>
                                                 </div>
                                                 
                                         </div>
                                     </div>
                                 </div>
-                                <li>
-                                    <div><a href="#" class="button w-button">Add A Reminder</a></div>
-                                </li>
+                                <br>
+                                <br>
+                                    <div>
+                                        <div class="New Reminder">
+                                            <span class="title">Set a new Reminder</span>
+                        <br>
+                                            <div class="fields">
+                                                <div class="input-field">
+                                                    <label>Name of Payment</label>
+                                                    <input type="text" placeholder="Enter the reminder's Name" required>
+                                                </div>
+                                                <br>
+                                                <div class="input-field">
+                                                    <label>Due Date</label>
+                                                    <input type="date" placeholder="Due Date" required>
+                                                </div>
+                                                <br>
+                                                <div class="input-field">
+                                                    <label>Amount</label>
+                                                    <input type="text" placeholder="Amount to be paid" required>
+                                                </div>
+                                                <br>
+                                                <button href="#" style="background-color: #0e2b81; border-radius: 10px; color: white;" class=" w-button" onclick="show()">Add A Reminder</button>
+                                                <a id="button" style="display:none ; color:green;">Your request has been submitted sucessfully</a>
+
+                                            </div>
+                                          
+                                        </div>
+                                        
+                                    </div>
+                                
                             </div>
                         </div>
                     </section>
@@ -439,6 +467,10 @@
         //       }
         //      }
             }
+            function show() {
+            var div = document.getElementById("button");
+            div.style.display = "block";
+        }
            </script>
         
     </body>
