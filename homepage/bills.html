@@ -20,6 +20,8 @@
             <img src="logocut.jpeg" width="150" height="150">
           </div>
         <header>Paying bills </header>
+        <a id="button12" style="display:none ; text-align: center; color:green;">Transaction completed successfully!</a>
+
         <form action="#">
             <div class="form first">
                 <div class="details personal">
@@ -90,13 +92,9 @@
             <label>Receiver Account Number </label>
             <input type="text" placeholder="enter account number" required>
         </div>
-                         
-                            <button id="hi1" class="nextBtn" onclick="show()" >
-                                <span class="btnText"  >pay</span>
-                      
-                            </div>
-
-                            <a id="button" style="display:none ; text-align: center; color:green;">Transaction completed successfully!</a>
+            
+                        </div>
+                        <button  onclick="show()" style=" background-color: #0e2b81; color:white; border-radius: 10px;" >pay</button>
                     
                     </div>
                 </div>
@@ -111,7 +109,7 @@
         </form>
     </div>
     <script>function show() {
-        var div = document.getElementById("button");
+        var div = document.getElementById("button12");
         div.style.display = "block";
       }</script>
 </body>
