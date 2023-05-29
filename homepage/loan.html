@@ -275,7 +275,11 @@
                     </div>  
                         </div>
                         <div class="col-md-12">
-                           <button class="send_btn">Send</button>
+                           <button class="send_btn" onclick="show8()">Send </button>
+                           <li>
+                              <a id="button2" style="display:none ; color:green;">your Request has been submitted sucessfully</a>
+                           </li>
+                          
                         </div>
                      </div>
                   </form>
@@ -300,16 +304,7 @@
                         <p> The point of using Lorem Ipsum is that it has a more-or-less normal di</p>
                      </div>
                   </div>
-                  <div class="col-lg-3 col-md-6 col-sm-6">
-                     <h3>Quick link</h3>
-                     <ul class="link_icon">
-                        <li class="active"> <a href="#"> <i class="fa fa-chevron-right" aria-hidden="index.html"></i>Home</a></li>
-                        <li> <a href="#"> <i class="fa fa-chevron-right" aria-hidden="blog"></i>Hbout </a></li>
-                        <li> <a href="#"> <i class="fa fa-chevron-right" aria-hidden="contact"></i>Currency</a></li>
-                        <li> <a href="#"> <i class="fa fa-chevron-right" aria-hidden="blog"></i>Exchange</a></li>
-                        <li> <a href="#"> <i class="fa fa-chevron-right" aria-hidden="contact"></i>Subscribe</a></li>
-                     </ul>
-                  </div>
+                  
                   <div class="col-lg-3 col-md-6 col-sm-6">
                      <h3>Instagram </h3>
                      <div class="follow">
@@ -347,6 +342,12 @@
       </footer>
       <!-- end footer -->
       <!-- Javascript files-->
+      <script>
+         function show8() {
+            var div = document.getElementById("button2");
+            div.style.display = "block";
+        }
+      </script>
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>

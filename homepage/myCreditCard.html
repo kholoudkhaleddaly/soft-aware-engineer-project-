@@ -77,10 +77,10 @@
                             <div class="content-l_hero">
                                 <h2 class="heading-2">Total Balance</h2>
                                 <div class="spacer-15"></div>
-                                <h1 class="heading-4">15,000 EGP</h1>
+                                <h1 id="moneyy" class="heading-4">15,000 EGP</h1>
                                 <h2 class="heading-2">Collected Points</h2>
                                 <div class="spacer-15"></div>
-                                <h1 class="heading-4">40
+                                <h1 id="pointss" class="heading-4">1000
                                     <img
                                                         src="Coin.png"
                                                         loading="lazy" height="30" width="40"/>
@@ -89,7 +89,7 @@
                                     <div class="stat-block">
                                         <div class="stat-label">TO Change Your Points To Money Click redeem</div>
                                         <div class="stat-info">20 points = 1EGP
-                                            <a href="#" class="w-button">Redeem</a>
+                                            <a href="#" class="w-button" onclick="changePoints()">Redeem</a>
                                         </div>
                                     </div>
                                     <div class="stat-block">
@@ -223,6 +223,14 @@
         crossorigin="anonymous"></script>
     <script src="https://uploads-ssl.webflow.com/6472ad1fcafccad9266ca477/js/webflow.1857e7897.js"
         type="text/javascript"></script>
+        <script>
+            function changePoints(){
+                document.getElementById('pointss').textContent="0";
+                document.getElementById('moneyy').textContent="15050 EGP"
+    
+            }
+        </script>
+    
 </body>
 
 </html>
