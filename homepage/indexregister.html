@@ -35,14 +35,19 @@
       </div>
       <div class="input-box button">
         
-        <input type="Submit" on click =" window.location.href='login.html'"
+        <input type="Submit" data-wait="Please wait..." onclick="show()" on click =" window.location.href='login.html'"
         value="sign up">
       </div>
+      <a id="button" style="display:none ; text-align: center; color:green;">You have successfully registered!</a>
+      <br>
       <div class="text">
         <h3>Already have an account? <a href="index1.html">Login now</a></h3>
       </div>
     </form>
   </div>
-
+<script>function show() {
+  var div = document.getElementById("button");
+  div.style.display = "block";
+}</script>
 </body>
 </html>
