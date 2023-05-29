@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="bills.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="bills.css">
+
+    <title>Responsive Regisration Form </title> 
+</head>
+<body>
+    <div class="container">
+        <div id="logo">
+            <img src="logocut.jpeg" width="150" height="150">
+          </div>
+        <header>Paying bills </header>
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                 
+
+                        <div class="input-field">
+                            <table border="1" , bordercolor="gray">
+                                <tr> 
+                                   <th> bill number</th>
+                                   <th>bill Type</th>
+                                   <th>bill amount </th>
+                                   <th>bill due date </th>
+                                   <th> bill bank account number</th>
+                                 </tr>
+                                 <tr>
+                                   <th>bill 1</th>
+                                   <td>electric</td>
+                                   <td>123 Egp</td>
+                                   <td>23/8/2023</td>
+                                   <td>1232323</td>
+                                 </tr>
+                                 <tr> 
+                                   <th>bill 2</th>
+                                   <td>gas </td>
+                                   <td>999 Egp</td>
+                                   <td>28/7/2025</td>
+                                   <td>1236787376</td>
+                                </tr>
+                                <tr> 
+                                    <th>bill 3</th>
+                                    <td>telephone  </td>
+                                    <td>999 Egp </td>
+                                    <td>28/7/2023</td>
+                                    <td>123826873</td>
+                                </tr>
+                               </table>
+                               <div class="input-field">
+                                <label>Bill Number</label>
+                                <input type="text" placeholder="enter bill number" required>
+                            </div>
+                         
+           
+                     
+           <div class="input-field">
+            <label>Money Amount</label>
+            <input type="text" placeholder="enter amount" required>
+        </div>
+      
+
+                        <div class="input-field">
+                            <label>Bills Utilities</label>
+                            <select required>
+                                <option disabled selected>select bill type</option>
+                                <option>water</option>
+                                <option> electric</option>
+                                <option> gas </option>
+                                <option> mobile</option>
+                      
+                            </select>
+                            
+                            
+           <div class="input-field">
+            <label>Sender Account Number</label>
+            <input type="text" placeholder="enter account number" required>
+        </div>
+                           
+        <div class="input-field">
+            <label>Receiver Account Number </label>
+            <input type="text" placeholder="enter account number" required>
+        </div>
+                         
+                       
+
+                            <button id="hi1" class="nextBtn" onclick="window.location.href='login.html'">
+                                <span class="btnText"  >pay</span>
+                      
+                      
+                      
+                            </div>
+   
+                    
+                    </div>
+                </div>
+
+                 
+                      <!--  <i class="uil uil-navigator"></i>-->
+                
+                </div> 
+            </div>
+
+          
+        </form>
+    </div>
+    <script>
+        function renderNewPage() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', 'login.html');
+          xhr.onload = function() {
+            if (xhr.status === 200) {
+              var newPage = xhr.responseText;
+              document.getElementById('hi1').innerHTML = newPage;
+            }
+          };
+          xhr.send();
+        }
+          </script>
+</body>
+</html>
