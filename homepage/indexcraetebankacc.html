@@ -91,13 +91,17 @@
                       </div>
                       
                     </div>
-                    <button id="hi" class="nextBtn"  onclick="show()"  onclick="window.location.href='login.html'">
+                    <div>
+                    <button id="hi" style="display: inline" class="nextBtn"  onclick="show()"  onclick="window.location.href='login.html'">
                         <span class="btnText"  >create account</span>
                       <!--  <i class="uil uil-navigator"></i>-->
-                      
                     </button>
-                    <a id="button" style="display:none ; text-align: center; color:green;">Your account has been successfully created!</a>
+                    <button id="hello" style="display:inline" class="nextBtn" onclick="window.location.href='index1.html'">
+                        <span class="btnText"  >Go to login</span>
+                    </button>
+                    <a id="button" style="display:none ; text-align: center; color:green;">Your account has been successfully created!</a></div>
                 </div> 
+                
             </div>
 
           
@@ -110,7 +114,7 @@
           xhr.onload = function() {
             if (xhr.status === 200) {
               var newPage = xhr.responseText;
-              document.getElementById('hi').innerHTML = newPage;
+              document.getElementById('hello').innerHTML = newPage;
             }
           };
           xhr.send();
