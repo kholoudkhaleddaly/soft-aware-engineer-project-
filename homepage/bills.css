@@ -11,7 +11,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #e5e1ff;
+    background: linear-gradient(135deg, #010635 100%, #0f0442 100%);;
 }
 .container{
     position: relative;
