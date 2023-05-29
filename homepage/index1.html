@@ -27,7 +27,7 @@
 		<h5>Login</h5>
 		<p>Don't have an account? <a href="indexregister.html">Create Your Account</a> it takes less than a minute</p>
 		<div class="inputs">
-			<input type="text" placeholder="user name">
+			<input type="text" placeholder="user name" id="username_input">
 			<br>
 			<input type="password" placeholder="password">
 		</div>
@@ -44,23 +44,24 @@
 		</div>
 			
 			<br>
-			<button id="login1" onclick="window.location.href='login.html'">Login </button>
+			<button id="login1" onclick="renderNewPage()">Login </button>
 	</div>
 	
 </div>
 <!-- partial -->
-  <script>
-function renderNewPage() {
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', 'login.html');
-  xhr.onload = function() {
-    if (xhr.status === 200) {
-      var newPage = xhr.responseText;
-      document.getElementById('login1').innerHTML = newPage;
-    }
-  };
-  xhr.send();
+<script>
+	function renderNewPage() {
+if (document.getElementById("username_input").value == "admin") {
+	window.location.href = "admin.html";
+		}
+ if (document.getElementById("username_input").value == "customer") {
+	window.location.href = "index.html";
+		}
+if (document.getElementById("username_input").value == "banker") {
+	window.location.href = "banker.html";
+		}
+
 }
-  </script>
+</script>
 </body>
 </html>
