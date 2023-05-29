@@ -341,7 +341,8 @@
                         <div>Oops! Something went wrong while submitting the form.</div>
                         
                     </div>
-                    <button style="position: absolute; right: 0;height:30px; background-color: red; color: aliceblue; border-radius: 5px;">Request to DELETE this account</button>
+                    <button onclick="show7()" style="position: absolute; right: 0;height:30px; background-color: red; color: aliceblue; border-radius: 5px;">Request to DELETE this account</button>
+                    <br><br><br><a id="button3" style="display:none ; color:green; position: absolute; right: 0;">your Request has been submitted sucessfully</a>
 <br>
 <br>
 <br>
@@ -362,6 +363,10 @@
 <script>
      function show8() {
             var div = document.getElementById("button2");
+            div.style.display = "block";
+        }
+        function show7() {
+            var div = document.getElementById("button3");
             div.style.display = "block";
         }
 </script>

@@ -120,7 +120,7 @@
                                 <label style="color: #dbc893;">Put a new Announcement</label>
                                 <textarea placeholder="Serial number" style="height: 50pxpx; border-radius: 5px; color: #000;" ></textarea>
                                 <button href="#" style=" background-color: #0e2b81; color:white; border-radius: 10px;" onclick="show5()">Submit</button>
-                                <a id="button5" style="display:none ; color:green;">your Request has been submitted sucessfully</a>
+                                <a id="button5" style="display:none ; color:green;">your request has been submitted sucessfully</a>
                             </div>
                             <br />
                         <li>
@@ -128,6 +128,9 @@
                         </li>
                         <li>
                             <a href="#" class="button-3 w-button" style="border-radius: 10px;" onclick="show3()">View and handle Theft reports</a>
+                        </li>
+                        <li>
+                            <a href="#" class="button-3 w-button" style="border-radius: 10px;" onclick="show4()">View Delete Account request</a>
                         </li>
                         <li>
                             <a href="#" class="button-6 w-button" style="border-radius: 10px;" onclick="showDiv1()">Unblock a Customer</a>
@@ -138,6 +141,34 @@
                     </ul>
                 </div>
 
+
+
+
+
+                <div style="border-color: #0e2b81; display:none; " id="final">
+                    <span style="color:black">Delete account requests </span>
+                    <ul>
+                        <li>Serial Number: 100      Issue: bla bla bla      CustomerName: bla bla      NationalID:123</li>
+                        <li>Serial Number: 101      Issue: bla bla bla      CustomerName: bla bla      NationalID:123</li>
+                        <li>Serial Number: 102      Issue: bla bla bla      CustomerName: bla bla      NationalID:123</li>
+                        <li>Serial Number: 103      Issue: bla bla bla      CustomerName: bla bla      NationalID:123</li>
+                        <li>Serial Number: 100      Issue: bla bla bla      CustomerName: bla bla      NationalID:123</li>
+
+                    </ul>
+                    <label style="color: #dbc893;">Select a request to handle</label>
+                    <textarea placeholder="Serial number" style="height: 50pxpx; border-radius: 5px; color: #000;" ></textarea>
+                    <textarea placeholder="Response message" style="height: 100px; border-radius: 5px; color: #000;" ></textarea>
+                    <br />
+                    <button href="#" style=" background-color: #0e2b81; color:white; border-radius: 10px;" onclick="show10()">Respond</button>
+                    <a id="final2" style="display:none ; color:green;">Your request has been submitted successfully</a>
+                
+                </div>
+
+
+
+
+
+
                 <div style="border-color: #0e2b81; display:none; " id="000">
                     <span style="color:black">Reported Technical Issues </span>
                     <ul>
@@ -147,12 +178,12 @@
                         <li>Serial Number: 100      Issue: bla bla bla      CustomerName: bla bla      NationalID:123</li>
                         <li>Serial Number: 100      Issue: bla bla bla      CustomerName: bla bla      NationalID:123</li>
                     </ul>
-                    <label style="color: #dbc893;">Select a Request to handle</label>
+                    <label style="color: #dbc893;">Select a request to handle</label>
                     <textarea placeholder="Serial number" style="height: 50pxpx; border-radius: 5px; color: #000;" ></textarea>
                     <textarea placeholder="Response message" style="height: 100px; border-radius: 5px; color: #000;" ></textarea>
                     <br />
                     <button href="#" style=" background-color: #0e2b81; color:white; border-radius: 10px;" onclick="show8()">Respond</button>
-                    <a id="button2" style="display:none ; color:green;">your Request has been submitted sucessfully</a>
+                    <a id="button2" style="display:none ; color:green;">your request has been submitted sucessfully</a>
                 </div>
                 <div style="border-color: #0e2b81; display:none; " id="0000">
                     <span style="color:black">Credit Card Theft </span>
@@ -164,12 +195,12 @@
                         <li>Serial Number: 100      Issue: bla bla bla      CustomerName: bla bla      NationalID:123</li>
 
                     </ul>
-                    <label style="color: #dbc893;">Select a Request to handle</label>
+                    <label style="color: #dbc893;">Select a request to handle</label>
                     <textarea placeholder="Serial number" style="height: 50pxpx; border-radius: 5px; color: #000;" ></textarea>
                     <textarea placeholder="Response message" style="height: 100px; border-radius: 5px; color: #000;" ></textarea>
                     <br />
                     <button href="#" style=" background-color: #0e2b81; color:white; border-radius: 10px;" onclick="show7()">Respond</button>
-                    <a id="button3" style="display:none ; color:green;">your Request has been submitted sucessfully</a>
+                    <a id="button3" style="display:none ; color:green;">your request has been submitted sucessfully</a>
                 
                 </div>
 
@@ -213,7 +244,7 @@
                         <br />
                     </div>
                     <button href="#" style=" background-color: #0e2b81; color:white; border-radius: 10px;" onclick="show1()">Submit</button>
-                    <a id="button1" style="display:none ; color:green;">your Request has been submitted sucessfully</a>
+                    <a id="button1" style="display:none ; color:green;">your request has been submitted sucessfully</a>
 
                 </div>
 
@@ -314,6 +345,14 @@
         }
         function show5() {
             var div = document.getElementById("button5");
+            div.style.display = "block";
+        }
+        function show4() {
+            var div = document.getElementById("final");
+            div.style.display = "block";
+        }
+        function show10() {
+            var div = document.getElementById("final2");
             div.style.display = "block";
         }
     </script>
